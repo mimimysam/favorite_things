@@ -3,10 +3,24 @@
   height: 100%;
   width: 100%;
   text-align: center;
+  font-size: 16pt;
   padding: 200px 0;
   background-color: rgb(255, 176, 231);
 }
 
 input {
   margin-bottom: 25px;
+  font-size: 16pt;
+}
+
+.item {
+  padding-bottom: 7px;
+}
+
+.item:hover {
+  background-color: yellow;
+}
+
+.thumbIcon {
+  cursor: pointer;
 }

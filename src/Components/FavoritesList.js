@@ -7,7 +7,7 @@ const FavoritesList = ({favoritesList}) => {
             <h2>Favorites List</h2>
             {favoritesList.map(item => {
                 return (
-                    <Item item={item} />
+                    <Item item={item} key={item.id}/>
                 )
             })}
         </div>

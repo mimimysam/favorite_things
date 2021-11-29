@@ -13,10 +13,11 @@ const ItemForm = ({ addItem }) => {
         addItem(userInput);
         setUserInput("");
     }
+    
     return (
         <form onSubmit={handleSubmit}>
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter item..."/>
-            <span> are one of my favorite things.</span>
+            <span> is/are one of my favorite things.</span>
         </form>
     );
 };
