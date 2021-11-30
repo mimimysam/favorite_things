@@ -11,16 +11,40 @@
 input {
   margin-bottom: 25px;
   font-size: 16pt;
+  font-family: 'Roboto Mono', monospace;
+  margin-right: 5px;
 }
 
 .item {
   padding-bottom: 7px;
+  margin-left: 100px;
 }
 
-.item:hover {
-  background-color: yellow;
+.item:hover .deleteBtn{
+  color: lightyellow;
 }
 
 .thumbIcon {
   cursor: pointer;
+}
+
+.deleteBtn {
+  color: rgb(255, 176, 231);
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  color: lightyellow;
+}
+
+.emoji-icon {
+  height: 22px;
+}
+
+li {
+  align-content: center;
+}
+
+ol {
+  align-content: center;
 }

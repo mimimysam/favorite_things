@@ -15,14 +15,13 @@ function App() {
     return fetch('http://localhost:8080/items')
       .then((response) => response.json())
       .then((json) => {
-        console.log(json)
-        setFavoritesList(json)
-      })
-  }
+        setFavoritesList(json);
+      });
+  };
 
   const addItem = (userInput) => {
-    setUserInput(userInput)
-    return fetch('http://localhost:8080/items', {
+    setUserInput(userInput);
+    fetch('http://localhost:8080/items', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -32,23 +31,26 @@ function App() {
         "item": userInput,
         "likes": 0
       })
-    })
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json)
-        // return json.data;
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    });
+    getFavorites();
   };
+
+  const deleteItem = (id) => {
+    fetch('http://localhost:8080/items/'+id, {
+        method: 'DELETE',
+        headers: {
+          Accept: 'application/json'
+        }
+    });
+    getFavorites();
+};
 
  return (
    <div className="App">
      <ItemForm addItem={addItem}/>
-     <FavoritesList favoritesList={favoritesList}/>
+     <FavoritesList favoritesList={favoritesList} deleteItem={deleteItem}/>
    </div>
  );
-}
+};
  
 export default App;

@@ -1,16 +1,14 @@
 {
   "ids": {
-    "Item": 8
+    "Item": 60
   },
   "models": {
     "Item": {
       "1": "{\"item\":\"books\",\"likes\":2,\"id\":1}",
-      "2": "{\"item\":\"books\",\"likes\":1,\"id\":2}",
-      "3": "{\"item\":\"books\",\"likes\":1,\"id\":3}",
       "4": "{\"item\":\"noodles\",\"likes\":3,\"id\":4}",
-      "5": "{\"item\":\"test\",\"likes\":0,\"id\":5}",
       "6": "{\"item\":\"travel\",\"likes\":0,\"id\":6}",
-      "7": "{\"item\":\"avocados\",\"likes\":1,\"id\":7}"
+      "7": "{\"item\":\"avocados\",\"likes\":2,\"id\":7}",
+      "57": "{\"item\":\"ice cream 🍬\",\"likes\":0,\"id\":57}"
     }
   }
 }
